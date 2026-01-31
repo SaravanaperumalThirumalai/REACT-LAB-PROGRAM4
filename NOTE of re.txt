@@ -1,0 +1,174 @@
+import { useState } from "react";
+import "./Box.css";
+
+
+function App() {
+  const [condition,setCondition] = useState(true);
+ 
+  return (
+    <>
+     <div className={condition ? "light":"dark"}> 
+<button onClick={()=> setCondition (!condition)}>Toggle</button>
+<h1>Theme Toggle</h1>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores mollitia quibusdam sunt aliquam dicta soluta neque perspiciatis est? Praesentium sequi tempore at hic maxime officiis, minus temporibus molestiae reiciendis nemo?
+</p>
+
+     </div>
+   
+    </>
+  )
+}
+
+export default App
+
+
+
+
+import { useState } from "react";
+import "./Box.css";
+
+function App() {
+  const [color, setColor] = useState("gray");
+
+  return (
+    <>
+      <h1>Class is Best</h1>
+
+      <div
+        style={{
+          height: "200px",
+          width: "250PX",
+          border: "2px solid black",
+          background: color,
+        }}
+      ></div>
+
+      <button
+        style={{ background: "red", color: "white", margin: "5px" }}
+        onClick={() => setColor("red")}
+      >
+        red
+      </button>
+
+      <button
+        style={{ background: "blue", color: "white", margin: "5px" }}
+        onClick={() => setColor("blue")}
+      >
+        blue
+      </button>
+
+      <button
+        style={{ background: "green", color: "white", margin: "5px" }}
+        onClick={() => setColor("green")}
+      >
+        green
+      </button>
+
+      <button
+        style={{ background: "black", color: "white", margin: "5px" }}
+        onClick={() => setColor("black")}
+      >
+        black
+      </button>
+
+      <button
+        style={{ background: "gray", color: "white", margin: "5px" }}
+        onClick={() => setColor("gray")}
+      >
+        Default
+      </button>
+    </>
+  );
+}
+
+export default App;
+
+import { useState } from "react";
+import "./Box.css";
+
+function App() {
+  const [color,setColor]= useState("gray")
+  
+
+  return (
+    <>
+    <h1>Class is Best</h1>
+    <div style={{
+     height : "200px",
+     width: "250PX",
+    border:"2px solid black",
+      background: color,
+
+    }}></div>
+    <button onClick={()=> setColor ("red")}>red</button>
+    <button onClick={()=> setColor ("blue")}>blue</button>
+    <button onClick={()=> setColor ("green")}>green</button>
+    <button onClick={()=> setColor ("black")}>black</button>
+    <button onClick={()=> setColor ("gray")}>Default</button>
+
+    </>
+   
+
+  );
+}
+
+export default App;
+import { useState } from "react";
+import "./Box.css";
+
+function App() {
+  const [color, setColor] = useState("gray");
+
+  return (
+    <>
+      <h1>Class is Best</h1>
+
+      <div
+        style={{
+          height: "200px",
+          width: "250PX",
+          border: "2px solid black",
+          background: color,
+        }}
+      ></div>
+
+      <button
+        style={{ background: "red", color: "white", margin: "5px" }}
+        onClick={() => setColor("red")}
+      >
+        red
+      </button>
+
+      <button
+        style={{ background: "blue", color: "white", margin: "5px" }}
+        onClick={() => setColor("blue")}
+      >
+        blue
+      </button>
+
+      <button
+        style={{ background: "green", color: "white", margin: "5px" }}
+        onClick={() => setColor("green")}
+      >
+        green
+      </button>
+
+      <button
+        style={{ background: "black", color: "white", margin: "5px" }}
+        onClick={() => setColor("black")}
+      >
+        black
+      </button>
+
+      <button
+        style={{ background: "gray", color: "white", margin: "5px" }}
+        onClick={() => setColor("gray")}
+      >
+        Default
+      </button>
+    </>
+  );
+}
+
+export default App;
